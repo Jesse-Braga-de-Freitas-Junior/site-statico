@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML5 localStorage</title>
+    <title>Desafio Ferreira Costa</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script language="JavaScript" type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container">
-    	<h1>HTML5 localStorage</h1>
+    	<h1>Desafio Ferreira Costa</h1>
     	<div id="list">
     		<table id="table" class="display"></table>
     		<div class="form-group">
@@ -25,48 +25,48 @@
 	    </div>
     	<form class="form-horizontal" role="form" id="formID">
     		<div class="form-group">
-    			<label for="seq" class="col-sm-2 control-label">Sequence</label>
+    			<label for="seq" class="col-sm-2 control-label">ID</label>
     			<div class="col-sm-6">
     				<p class="form-control-static" id="seq"></p>
     			</div>
     		</div>
     		<div class="form-group">
-    			<label for="useId" class="col-sm-2 control-label">User ID</label>
+    			<label for="useId" class="col-sm-2 control-label">Nome</label>
     			<div class="col-sm-6">
-    				<input type="text" class="form-control validate[required,custom[AID]]" id="useId" placeholder="User ID">
+    				<input type="text" class="form-control validate[required,custom[]]" id="useId" placeholder="Nome">
           		</div>
           	</div>
     		<div class="form-group">
-    			<label for="temperature" class="col-sm-2 control-label">Temperature(degC)</label>
+    			<label for="temperature" class="col-sm-2 control-label">Sobrenome</label>
     			<div class="col-sm-6">
-    				<input type="text" class="form-control validate[required,custom[number]]" id="temperature" placeholder="Temperature(degC)">
+    				<input type="text" class="form-control validate[required,custom[]]" id="temperature" placeholder="Sobrenome">
           		</div>
     		</div>
     		<div class="form-group">
-    			<label for="current" class="col-sm-2 control-label">Current(mA)</label>
+    			<label for="current" class="col-sm-2 control-label">Email</label>
     			<div class="col-sm-6">
-    				<input type="text" class="form-control validate[required,custom[number]]" id="current" placeholder="Current(mA)">
+    				<input type="text" class="form-control validate[required,custom[]]" id="current" placeholder="Email">
           		</div>
     		</div>
     		<div class="form-group">
-    			<label for="noise" class="col-sm-2 control-label">Noise</label>
+    			<label for="noise" class="col-sm-2 control-label">Genero</label>
     			<div class="col-sm-6">
 	    			<div class="radio">
 	    				<label>
 	    					<input type="radio" class="validate[required]" name="noise" value="noNoise">
-	    					No noise
+	    					Masculino
 	    				</label>
 	    			</div>
 	    			<div class="radio">
 	    				<label>
 	    					<input type="radio" class="validate[required]" name="noise" value="noisy">
-	    					Noisy
+	    					Feminino
 	    				</label>
 	    			</div>
     			</div>
     		</div>
     		<div class="form-group">
-    			<label for="note" class="col-sm-2 control-label">Note</label>
+    			<label for="note" class="col-sm-2 control-label">Fala Sobre Voce</label>
     			<div class="col-sm-6">
     				<textarea id="note" class="form-control" rows="3"></textarea>
     			</div>
@@ -130,14 +130,14 @@
 		oTable=$('#table').dataTable({
 			"data": dataSet,
 			"columns": [
-			{ "title": "Seq", "class": "center" },
-			{ "title": "", "class": "center" },
-			{ "title": "User" },
-			{ "title": "Time" },
-			{ "title": "Temp.<br>(degC)", "class": "center" },
-			{ "title": "Current<br>(mA)", "class": "center" },
-			{ "title": "Noise" },
-			{ "title": "Note" }
+			{ "title": "Id", "class": "center" },
+			{ "title": "Edite/Delete", "class": "center" },
+			{ "title": "Nome" },
+			{ "title": "Status Timer" },
+			{ "title": "Sobrenome", "class": "center" },
+			{ "title": "CPF", "class": "center" },
+			{ "title": "Genero" },
+			{ "title": "Fale Sobre Voce" }
 			]
 		});
 
